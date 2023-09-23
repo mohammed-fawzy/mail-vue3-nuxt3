@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-flow-column {
+  flex-flow: column;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.page-title{
+  color: #121829;
+  font-size: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.form-group{
+  border-bottom: 1px solid #E5E7EB;
+  height: 60px;
+  // padding: 0px 24px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  transition: background .2s;
+  label{
+    color: #121829;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+  }
+  input {
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #CAD6E4;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    &:checked {
+      appearance: auto;
+      background-color: #0968FE;
+    }
+  }
+  &:hover{
+    background: #D1E2FF;
+  }
+  &.readed{
+    opacity: .5;
+  }
+}
+
+.form-group--select-all{
+  input {
+    margin-right: 12px;
+  }
+}
